@@ -22,66 +22,43 @@
 <link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" />
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway:900,800,700' rel='stylesheet' type='text/css'>
-   <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
     
 <title>Rock of Ages Baptist Church</title>
 
 <link href="styles/style.css" rel="stylesheet" type="text/css">
 <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="optmedia.css" rel="stylesheet" type="text/css">
+
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
-<script src="cordova.js"></script>
-
-
-<!-----ONESIGNAL----->
-<script> 
-	  // Add to index.js or the first page that loads with your app.
-	// For Intel XDK and please add this to your app.js.
-	document.addEventListener('deviceready', function () {
-	  // Enable to debug issues.
-	  // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-	  var notificationOpenedCallback = function(jsonData) {
-		console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-	  };
-	  window.plugins.OneSignal
-		.startInit("32d61d89-89b7-45cf-be9b-d8cbe90bac09")
-		.handleNotificationOpened(notificationOpenedCallback)
-		.endInit();
-	  // Call syncHashedEmail anywhere in your app if you have the user's email.
-	  // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
-	  // window.plugins.OneSignal.syncHashedEmail(userEmail);
-	}, false);
-</script> 
-
-
+    
+    <!--CHAMADAS OPTO-->
+    <script type="text/javascript" src="opto/js/opto.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    
 </head>
 
+
+
 <body>
+	
+	
     
 <div class="sidebar-tap-close"></div>   <!-- Overlay for content to close Sidebar -->
 
 <div class="header-fixed">
-    <a href="#" class="header-icon-1 open-left-sidebar"><i class="fa fa-navicon"></i></a>
-    <a href="index.html" class="header-logo"><img style="margin-left: 12px; width: 105px; height: 52px;" src="images/logo.svg" width="160" height="60" alt=""/></a>
-    <a href="#" class="header-icon-2 open-right-sidebar"><i class="fa fa-heart"></i></a>
-    <!--<a href="#" class="header-icon-3 open-search-bar"><i class="fa fa-search"></i></a>-->
+    <a href="index.html" class="header-logo"><img style="margin-left: 12px; width: 120px; height: 60px;" src="images/logo.png" alt="" /></a>
+    <a href="#" class="header-icon-3 open-left-sidebar"><i class="fa fa-navicon"></i></a>
 </div>
     
-<div class="header-search">
-    <input type="text" value="Looking for something?">
-    <a class="close-search-bar" href="#"><i class="fa fa-times"></i></a>
-</div>
-    
+	
+	
 <div class="sidebar-left">
     <div class="sidebar-scroll">
         <div class="sidebar-header left-sidebar-header">
-            <h3><a href="index.html"><img style="margin-top: 5px; margin-left: 5px;" src="images/logo.svg" width="96" height="50" alt=""/></a></h3>            
-            <a href="#" onClick="window.open('https://twitter.com/roabc','_system','location=yes');return false;"><i class="fa fa-twitter"></i></a>
-            <a href="#" onClick="window.open('https://www.facebook.com/roabc','_system','location=yes');return false;"><i class="fa fa-facebook"></i></a>
-            <a class="close-sidebar" href="#"><i class="fa fa-times"></i></a>
-            <div class="clear"></div>
+            <a class="close-sidebar" href="#"><i class="fa fa-arrow-left"></i></a>
+            <div class="clear">
+			</div>
         </div>
         <div class="sidebar-divider">
             Navigation
@@ -89,214 +66,97 @@
         <div class="sidebar-menu">
             <a class="menu-item active-item" href="index.html"><!-- active-item -->
                 <i class="fa fa-home bg-blue-dark"></i>
-                Front
+                Home
                 <i class="fa fa-circle"></i>
-            </a>
-            <a class="menu-item" href="live_service.html"><!-- active-item -->
-                <i class="fa fa-video-camera bg-blue-dark"></i>
-                Live Service
-                <i class="fa fa-circle"></i>
-            </a>            
-            <a class="menu-item" href="whats_new.html"><!-- active-item -->
-                <i class="fa fa-newspaper-o bg-blue-dark"></i>
-                What's New
-                <i class="fa fa-circle"></i>
-            </a>           
-            <a class="menu-item" href="media_center.html">
-                <i class="fa fa-wifi bg-blue-dark"></i>
-                Media Center
-                <i class="fa fa-circle"></i>
-            </a> 
+            </a>          
             <a class="menu-item" href="rock_news.html">
                 <i class="fa fa-television bg-blue-dark"></i>
                 Rock News
                 <i class="fa fa-circle"></i>
-            </a>                             
-            <a class="menu-item" href="cornerstones.html">
-                <i class="fa fa-cog bg-blue-dark"></i>
-                Cornerstones
-                <i class="fa fa-circle"></i>
-            </a>             
-            <a class="menu-item" href="aboutus.html">
-                <i class="fa fa-globe bg-blue-dark"></i>
-                About us
-                <i class="fa fa-circle"></i>
-            </a>             
+            </a>           
             <a class="menu-item" href="giving.html">
                 <i class="fa fa-heart bg-blue-dark"></i>
                 Giving
                 <i class="fa fa-circle"></i>
-            </a>             
+            </a>        
             <a class="menu-item" href="contact.html">
                 <i class="fa fa-envelope-o bg-blue-dark"></i>
                 Contact
                 <i class="fa fa-circle"></i>
-            </a>  
-            <a class="close-sidebar menu-item" href="#">
-                <i class="fa fa-times bg-blue-dark"></i>
-                Close
-                <i class="fa fa-circle"></i>
-            </a>              
-        </div>        
-        <em class="sidebar-copyright">Copyright 2017. All Rights Reserved</em>
-    </div>
-</div>
-      
-<div class="sidebar-right">
-    <div class="sidebar-scroll">
-        <div class="sidebar-header right-sidebar-header">
-            <h3><img style="margin-top: 5px;" src="images/logo.svg" width="96" height="50" alt=""/></h3>
-            <a href="#" onClick="window.open('https://twitter.com/roabc','_system','location=yes');return false;"><i class="fa fa-twitter"></i></a>
-            <a href="#" onClick="window.open('https://www.facebook.com/roabc','_system','location=yes');return false;"><i class="fa fa-facebook"></i></a>
-            <a class="close-sidebar" href="#"><i class="fa fa-times"></i></a>
-            <div class="clear"></div>
-        </div>        
-        
-        <div class="sidebar-divider">
-            Announcements 
-        </div> 
-        <div id="ann_sidebar"></div>
-        
-        <script>
-				function pegaAnn(){
-					$.ajax({
-						type: "POST",
-						url: "http://www.roabc.org/phonegap/newApp/announcements.php",
-						crossDomain: true,
-						dataType: "json",
-						success: function(data){
-							$("#ann_sidebar").empty();
-							for(var i=0;data.length>i;i++){
-								var ann = '<div style="overflow: auto; padding: 10px;"><div style="float: left; margin: 0px; padding: 0px; line-height: 12px; color: #62A8F3; margin-bottom: 2px;">'+data[i].title+'</div><div style="float: left; font-size: 12px; line-height: 12px;">'+data[i].text+'</div></div>';
-								$("#ann_sidebar").append(ann);
-							}
-						}
-					})
-				}
-			</script>
-        <div class="sidebar-divider">
-            Events
-        </div>        
-        <!-------BANNER SIDEBAR----->
-        <div class="optmedia-banner-sidebar" id="bannerSidebar">
-			
-		</div>
-        
-                
-                                
-        <div class="sidebar-divider">
-            Let's get social
+            </a>            
         </div>
-        <div class="sidebar-menu">
-            <a class="menu-item" href="#" onClick="window.open('https://www.facebook.com/roabc','_system','location=yes');return false;">
-                <i class="fa fa-facebook facebook-color"></i>
-                Facebook
-                <i class="fa fa-circle"></i>                        
-            </a>            
-            <a class="menu-item" href="#" onClick="window.open('https://twitter.com/roabc','_system','location=yes');return false;">
-                <i class="fa fa-twitter twitter-color"></i>
-                Twitter
-                <i class="fa fa-circle"></i>                        
-            </a>            
-            <a class="menu-item" href="#" onClick="window.open('https://www.youtube.com/user/MEWMINISTRIES1?feature=mhum','_system','location=yes');return false;">
-                <i class="fa fa-google-plus google-color"></i>
-                Youtube 
-                <i class="fa fa-circle"></i>                        
-            </a>   
-            <div class="sidebar-divider">
-                GET IN TOUCH
-            </div>
-            <a class="menu-item" href="tel:708.344.0704">
-                <i class="fa fa-phone phone-color"></i>
-                Call Us
-                <i class="fa fa-circle"></i>                        
-            </a>           
-            <a class="menu-item" href="mailto:media@roabc.org">
-                <i class="fa fa-envelope-o mail-color"></i>
-                Mail Us 
-                <i class="fa fa-circle"></i>                        
-            </a>                          
-        </div>    
-        <em class="sidebar-copyright">Copyright 2017. All Rights Reserved</em>        
     </div>
 </div>
+	
+	
 
 <div id="page-content"><!--Add sidebar-move to move with body-->
     <div id="page-content-scroll"><!--Enables this element to be scrolled -->        
-        <div class="header-clear-large"></div>
-              
-        <div class="content">
-        	<div id="banner" class="sidebar-articles">
-				
-				<!--------BANNER DA HOME----->
-				<div class="optmedia-banner" id="bannerHome">
-					
-				</div>
-				
-			</div> 
-           <script>
-				pegaAnn();
-				pegaBanner();
-				function pegaBanner(id){
-					$.ajax({
-						type: "POST",
-						url: "http://www.roabc.org/phonegap/newApp/banner.php",
-						crossDomain: true,
-						dataType: "json",
-						success: function(dataBanner){
-							$('#bannerHome').empty();
-							for(var i=0;dataBanner.length>i;i++){
-
-								var banner = '<div class="optmedia-banner-image"><img src="http://www.roabc.org/phonegap/newApp/banners/'+dataBanner[i].image+'" alt=""/></div>';
-								
-								$('#bannerHome').append(banner);
-								$('#bannerSidebar').append(banner);
-							}
-						}
-					})
-				}
-			</script> 
-            <div class="decoration"></div>
-        </div>  
-              
-        <div class="content">
-        <div style="margin-bottom: 20px;">
-			<h3 style="text-align:center; font-size:16px; color:#1f1f1f;">Worship Schedule</h3>
-			<p style="text-align:center;">Sundays @ 8:00 a.m. and 11:00 a.m.</p>
-        </div>
-        <div style="margin-bottom: 20px;">
-			<h3 style="text-align:center; font-size:16px; color:#1f1f1f;">Compassion Line</h3>
-			<p style="text-align:center;">708-343-HOPE (4673)</p>
-        </div>
-        <div style="margin-bottom: 20px;">
-			<h3 style="text-align:center; font-size:16px; color:#1f1f1f;">T. H. Wade Center</h3>
-			<p style="text-align:center;">1405 Madison St. Maywood IL, 60153</p>
-        </div>
+        <div class="header-clear">
+		</div>
+		<div class="sidebar-articles">
+            <a href="index.html">
+                <img data-original="images/0.png" alt="img" class="preload-image responsive-image"></a> 
         </div>
         
-        <div class="footer">
+        <div class="sidebar-articles" id="recebeBanners">
+            <!--
+            <a href="https://index.html">
+                <img data-original="images/pastor.jpg" alt="img" class="preload-image responsive-image">
+                <!-- <strong>We open our arms to welcome you to Central Baptist Church!</strong>--
+            </a>            
+            <a href="https://index.html">
+                <img data-original="images/thought.jpg" alt="img" class="preload-image responsive-image">
+                <!--<strong>Pastor Anniversary - March 18</strong> --
+            </a>            
+            <a href="https://index.html">
+                <img data-original="images/live.jpg" alt="img" class="preload-image responsive-image">
+                <!-- <strong>Easter Lectuce | March 14th-21st</strong> --
+            </a>
+			<a href="media-center.html">
+                <img data-original="images/edification.jpg" alt="img" class="preload-image responsive-image">
+                <!-- <strong>Easter Lectuce | March 14th-21st</strong> --
+            </a>
+			<a href="https://index.html">
+               
+                <img data-original="images/friends.jpg" alt="img" class="preload-image responsive-image">
+                <!-- <strong>Easter Lectuce | March 14th-21st</strong> --
+            </a>
+			<a href="https://www.easytithe.com/dl/?uid=zion1600169">
+                <img data-original="images/give.jpg" alt="img" class="preload-image responsive-image">
+                <!-- <strong>Easter Lectuce | March 14th-21st</strong> --
+            </a>
+            -->
+        </div>
+		
+		<div class="footer">
+            <!--
             <div class="footer-content">
                 <h3 style="margin-bottom: 30px;" class="footer-logo">Rock of Ages<br><div style="text-align: center; font-size: 14px;">Baptist Church</div></h3>
-                
                 <p class="footer-text">
-                    708 344 0704<br>
+                    708.344.0704<br>
                     1309 Madison St. Maywood IL, 60153
                     <a onClick="window.open('http://www.roabc.org','_system','location=yes');return false;" href="#">www.roabc.org</a>
                 </p>
             </div>
             <div class="footer-socials">
-                <a onClick="window.open('https://www.facebook.com/roabc','_system','location=yes');return false;" href="#" class="scale-hover facebook-color"><i class="fa fa-facebook"></i></a>
+                <a onClick="window.open('https://facebook.com/roabc','_system','location=yes');return false;" href="#" class="scale-hover facebook-color"><i class="fa fa-facebook"></i></a>
                 <a onClick="window.open('https://twitter.com/roabc','_system','location=yes');return false;" href="#" class="scale-hover twitter-color"><i class="fa fa-twitter"></i></a>
-                <a onClick="window.open('https://www.youtube.com/user/MEWMINISTRIES1?feature=mhum','_system','location=yes');return false;" href="#" class="scale-hover google-color"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="tel:708.344.0704" class="scale-hover phone-color"><i class="fa fa-phone"></i></a>
-                <a href="mailto:media@roabc.org" class="scale-hover mail-color"><i class="fa fa-envelope-o"></i></a>
-                <a href="#" class="scale-hover bg-night-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+                <a onClick="window.open('https://instagram.com/rock.baptist/','_system','location=yes');return false;" href="#" class="scale-hover instagram-color"><i class="fa fa-instagram"></i></a>
+                <a onClick="window.open('https://youtube.com/user/MEWMINISTRIES1?feature=mhum','_system','location=yes');return false;" href="#" class="scale-hover google-color"><i class="fa fa-youtube-play"></i></a>
+                <a onClick="window.open('https://vimeo.com/roabc','_system','location=yes');return false;" href="#" class="scale-hover twitter-color"><i class="fa fa-vimeo"></i></a>
                 <div class="clear"></div>
             </div>
-            <p class="footer-strip">Copyright <span id="copyright-year"></span> All Rights Reserved | by <a onClick="window.open('http://www.optmedia.net','_system','location=yes');return false;" href="http://www.optmedia.net">optmedia.net</a></p>
+            
+            <p class="footer-strip">Copyright <span id="copyright-year"></span> All Rights Reserved<br>Designed by d-zyne.com | Powered by optocreative.com</p>
+            -->
         </div>
+		
+		
+		
     </div>
 </div>
-    
 
+    
+    <script>pegaBanners();</script>
 </body>

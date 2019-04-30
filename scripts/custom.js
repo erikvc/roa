@@ -143,14 +143,14 @@ $( document ).ready(function() {
     
     //Status Bar
     var options = {
-        bg: '#3299cd',
+        bg: '#89bada',
         // leave target blank for global nanobar
         target: document.getElementById('myDivId'),
         // id for new nanobar
         id: 'mynano'
     };
     var nanobar = new Nanobar( options );
-    nanobar.go( 60 ); // size bar 30%
+    nanobar.go( 30 ); // size bar 30%
     nanobar.go(100); // size bar 100%
         
 });
