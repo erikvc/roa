@@ -1,0 +1,166 @@
+.opto-center-page{
+	padding: 50px 20px 50px 20px;
+}
+.opto-center-page h2{
+	font-size: 30px;
+	color: #009CD2;
+}
+.opto-center-page a{
+	color: #3D3D3D;
+}
+.opto-group-box{
+	padding: 14px;
+	background-color: #E7E7E7;
+	border-radius: 5px;
+	display: block;
+}
+.opto-group-box-description{
+	line-height: 18px;
+	font-size: 14px;
+}
+.opto-group-box-name{
+	font-size: 20px;
+}
+.opto-group-box-member-count{
+	text-align: right;
+	color: #006B8F;
+	font-size: 14px;
+}
+.marginBottom20{
+	margin-bottom: 20px;
+}
+.marginBottom10{
+	margin-bottom: 10px;
+}
+.align-center{
+	text-align: center;
+}
+
+
+
+
+.opto-center-page input, textarea{
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border: 1px solid #D5D5D5;border-radius: 4px;
+}
+
+textarea{
+	height: 200px;
+}
+.opto-center-page button{
+	padding: 14px;
+	background-image: linear-gradient(to right, #009cd2, #1795cf, #258fcb, #3088c6, #3981c1);
+	color: #ffffff;
+	width: 100%;
+	border-radius: 5px;
+}
+
+
+
+.opto-group-request-box{
+	position: relative;
+	height: 65px;
+	border-bottom: 1px solid #F1F1F3;
+	display: block;
+}
+.opto-group-request-image{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 60px;
+	height: 60px;
+}
+.opto-group-request-image img{
+	border-radius: 100%;
+	border: 2px solid #EEEEEE;
+}
+.opto-group-request-arrow{
+	color: #A4AFB7;
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+	right: 0px;
+}
+.opto-group-request-name{
+	margin-left: 70px;
+	color: #19769F;
+	font-size: 14px;
+	position: absolute;
+}
+.opto-group-request-date{
+	margin-left: 70px;
+	color: #51565F;
+	font-size: 10px;
+	position: absolute;
+	top: 15px;
+}
+.opto-group-request-text{
+	line-height: 18px;
+}
+
+
+
+.opto-group-request-box2{
+	position: relative;
+	height: 35px;
+	border-bottom: 1px solid #F1F1F3;
+	display: block;
+}
+.opto-group-request-image2{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 60px;
+	height: 60px;
+}
+.opto-group-request-image2 img{
+	border-radius: 100%;
+	border: 2px solid #EEEEEE;
+}
+.opto-group-request-arrow2{
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+	right: 0px;
+	width: 50px;
+	text-align: center;
+	height: 30px;
+}
+.opto-group-request-name2{
+	margin-left: 35px;
+	color: #19769F;
+	font-size: 14px;
+	position: absolute;
+}
+.opto-group-request-praying{
+	font-size: 10px;
+	padding: 0px;
+	background-color: #68C36A;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+
+
+
+
+.formError{
+	text-align: center;
+	padding: 14px;
+	/*background-color: #B84A4C;*/
+	color: #ffffff;
+	font-size: 18px;
+	border-radius: 5px;
+	display: none;
+}
+
+.bacgroundError{
+	background-color: #B84A4C;
+}
+.backgroundSucces{
+	background-color: #518753;
+}
